@@ -134,6 +134,36 @@ input:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
 } */
 
+/* NAV */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+  display: block;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  width: 7rem;
+  height: 1.75rem;
+  display: block;
+}
+
+
 /* BUTTONS */
 
 .btn {
