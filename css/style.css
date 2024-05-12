@@ -148,6 +148,7 @@ input:-webkit-autofill:focus {
 
 .logo {
   display: block;
+  margin-right: 1rem;
 }
 
 .logo:hover {
@@ -261,7 +262,7 @@ input:-webkit-autofill:focus {
 .hero__left {
   position: absolute;
   top: -9.125rem;
-  right: -21rem;
+  right: calc(50% - 60rem);
   z-index: -1;
 }
 
@@ -383,4 +384,145 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+@media only screen and (max-width: 1160px) {
+  .courses__card-wrapper {
+    justify-content: space-evenly;
+}
+
+.courses__card-img {
+  max-width: 100%;
+  height: auto;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .courses__card-wrapper {
+    margin-left: 0;
+  }
+
+  .courses__card {
+    width: 21rem;
+    height: 16rem;
+    margin: 0;
+    margin-left: 0.625rem;
+    margin-bottom: 4rem;
+    padding: 3.5rem 1.375rem 2rem 2rem;
+  }
+
+  .courses__card--chekced-info {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .courses__card-heading {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+    margin-bottom: 1rem;
+  }
+
+  .courses__card-description {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .hero {
+    padding-top: 4.68rem;
+    padding-bottom: 11.6rem;
+  }
+  .hero__content {
+    width: 24.875rem;
+  }
+
+  .hero-content__heading {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    margin-bottom: 1.56rem;
+  }
+
+  .hero-content__description {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__left {
+    top: 0;
+    right: calc(50% - 41rem);
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .hero__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .courses {
+    padding-bottom: 5.375rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero__picture {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero {
+    padding-bottom: 26rem;
+  }
+  .hero__left {
+    top: 30rem;
+    left: 0;
+    width: 29rem;
+    height: auto;
+  }
+
+  .hero__picture {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .courses__card {
+    margin: 0;
+  }
+
+    .courses__card--chekced {
+      height: 120px;
+      padding: 1.5rem 1.875rem 2rem  1.75rem;
+    }
+
+  .courses__card:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
 }
